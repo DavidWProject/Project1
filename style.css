@@ -2,6 +2,20 @@
     margin: 50px;
 }
 
+.header {
+    background-image: url("images/header-background.png");
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Raleway", "sans-serif";
+}
+
+.logo {
+    color: white;
+}
+
 .input-div {
     margin-bottom: 5px;
 }
