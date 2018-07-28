@@ -1,0 +1,26 @@
+#user-inputs {
+    margin: 50px;
+}
+
+.input-div {
+    margin-bottom: 5px;
+}
+
+#btn-male {
+    background-color: rgba(23, 16, 53);
+    color: white;
+}
+
+#btn-female {
+    background-color: rgb(250, 112, 255);
+    color: white;
+}
+
+#submit-btn {
+    background-color: rgba(23, 16, 53);
+    color: white;
+}
+
+#results-div {
+    visibility: hidden;
+}
