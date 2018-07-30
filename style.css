@@ -38,3 +38,50 @@ body {
 #results-div {
     visibility: hidden;
 }
+/*testimonials section css*/
+
+.testimony {
+    
+    background-color:white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    margin-top: 50px;
+}
+
+/* Clear floats after containers */
+.testimony::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.testimony img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.testimony span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .testimony {
+    text-align: center;
+  }
+
+  .testimony img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+.homer{
+    font-family: 'Gaegu', cursive;
+}

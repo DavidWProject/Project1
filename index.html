@@ -8,21 +8,88 @@
     <title>EasyFit</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
     integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
 
+        
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 text-center header">
-                <h1 class="display-2 logo"> EasyFit </h1>
+            <div class="col-lg-12 text-center">
+                <h1 class="header display-2"> EasyFit </h1>
             </div>
         </div>
+        
+
+
+<div class ="container">
+<div class ="row">
+    <div class = "col-6">
+
+<div class="" style="max-width:500px">
+    
+    
+    
+  <img class="mySlides" src="img_la.jpg" style="width:110%">
+  <img class="mySlides" src="img_ny.jpg" style="width:110%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:110%">
+
+    </div>
+</div>
+<div col-6>
+
+    <div class="" style="max-width:500px">
+    
+    
+    
+        <img class="mySides" src="img_la.jpg" style="width:110%">
+        <img class="mySides" src="img_ny.jpg" style="width:110%">
+        <img class="mySides" src="img_chicago.jpg" style="width:110%">
+      
+          </div>
+        </div>
+
+        </div>
+     </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+var myInde = 0;
+carouse();
+
+function carouse() {
+    var i;
+    var x = document.getElementsByClassName("mySides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myInde++;
+    if (myInde > x.length) {myInde = 1}    
+    x[myInde-1].style.display = "block";  
+    setTimeout(carouse, 2000); // Change image every 2 seconds
+}
+</script>
+       
+    
+
 
         <div class="row">
-            <div class="col-lg-8" id="user-inputs">
+            <div class="col-lg-7" id="user-inputs">
                 <form>
                     <div class="form-group">
                         <div class="input-div" id="name">
@@ -128,7 +195,31 @@
                     </div>
                 </form>    
             </div>
-        </div>
+            <div class= "col-lg-4">
+             <div class="container testimony">
+                <img src="images/Homer.jpg" alt="Avatar" style="width:90px">
+                <p><span>Homer Simpson</span> Nuculur Power Plant</p>
+                <p class ="homer">"This website helped me become MAX POWE...mmmm Donuts...DOH!"</p>
+              </div>
+              
+              <div class="container testimony">
+                <img src="images/spongebobs.png" alt="Avatar" style="width:90px">
+                <p><span >Spongebob Squarepants</span> Chef</p>
+                <p>IM READY ,IM READY, IM READY!OH YA..!! This is AWESOME!</p>
+              </div>
+              <div class="container testimony">
+                    <img src="img_ny.jpg" alt="Avatar" style="width:90px">
+                    <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                    <p>John Doe saved us from a web disaster.</p>
+                  </div>
+                  
+                  <div class="container testimony">
+                    <img src="img_ny.jpg" alt="Avatar" style="width:90px">
+                    <p><span >Rebecca Flex.</span> CEO at Company.</p>
+                    <p>No one is better than John Doe.</p>
+                  </div>    
+                </div>
+        
 
         <div class="row" id="results-div">
             <div class="col-lg-12 text-center">
