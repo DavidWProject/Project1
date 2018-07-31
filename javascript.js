@@ -47,9 +47,3 @@ $.ajax({
   console.log(response.hits[0].recipe.healthLabels)
 });
 
-$(document).on("click", "#submit-btn", function () {
-    var firstName = $(".form-control1").val(); 
-    var lastName = $(".form-control2").val(); 
-    var fullName = firstName + " " + lastName; 
-    console.log(fullName); 
-})
