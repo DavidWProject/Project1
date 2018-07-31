@@ -76,7 +76,7 @@ body {
   }
 
   .testimony img {
-    margin: auto;
+  
     float: none;
     display: block;
   }
@@ -84,4 +84,8 @@ body {
 
 .homer{
     font-family: 'Gaegu', cursive;
+}
+.spongeBob{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 10px;
 }
