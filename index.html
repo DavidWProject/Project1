@@ -13,99 +13,21 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<<<<<<< HEAD
-<body>      
-=======
 <body>
 
 
->>>>>>> 3e12bcbe6ce119242774ef2a7a23995a0551382c
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center header">
                 <h1 class="display-2"> EasyFit </h1>
             </div>
         </div>
-<<<<<<< HEAD
-        
-        <div class ="row slideshow">
-            <div class = "col-lg-6">
-
-                <div class="" style="max-width:500px">
-                    <img class="mySlides" src="img_la.jpg" style="width:110%">
-                    <img class="mySlides" src="img_ny.jpg" style="width:110%">
-                    <img class="mySlides" src="img_chicago.jpg" style="width:110%">
-                </div>
-
-            </div>
-
-            <div class="col-lg-6 slideshow">
-
-                <div class="" style="max-width:500px">
-                
-                
-                    <img class="mySides" src="img_la.jpg" style="width:110%">
-                    <img class="mySides" src="img_ny.jpg" style="width:110%">
-                    <img class="mySides" src="img_chicago.jpg" style="width:110%">
-                
-
-                </div>
-            </div>
-        </div>
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-
-var myInde = 0;
-carouse();
-
-function carouse() {
-    var i;
-    var x = document.getElementsByClassName("mySides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myInde++;
-    if (myInde > x.length) {myInde = 1}    
-    x[myInde-1].style.display = "block";  
-    setTimeout(carouse, 2000); // Change image every 2 seconds
-}
-</script>
-       
-    
-
-
-    <div class="row">
-        <div class="col-lg-7" id="user-inputs">
-            <form>
-                <div class="form-group">
-                    <div class="input-div" id="name">
-                        <h4>Name</h4>
-                        <div class="form-row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="First name">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name">
-=======
 
 
 
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
 
                     <div class="" style="max-width:500px">
 
@@ -117,7 +39,7 @@ function carouse() {
 
                     </div>
                 </div>
-                <div col-6>
+                <div class="col-lg-6">
 
                     <div class="" style="max-width:500px">
 
@@ -135,192 +57,159 @@ function carouse() {
 
         <div class="row">
             <div class="col-lg-7" id="user-inputs">
-                <form>
-                    <div class="form-group">
-                        <div class="input-div" id="name">
-                            <h4>Name</h4>
-                            <div class="form-row">
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                </div>
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name">
-                                </div>
->>>>>>> 3e12bcbe6ce119242774ef2a7a23995a0551382c
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-div" id="gender-age">
-                        <div class="form-row">
-                            <div class="col-lg-6">
-                                <h4>Gender</h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <button class="btn btn-block" id="btn-male">Male</button>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <button class="btn btn-block" id="btn-female">Female</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <h4>Age</h4>
-                                <input type="text" class="form-control" placeholder="Years">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-div" id="height">
-                        <h4>Height</h4>
+                <div class="form-group">
+                    <div class="input-div" id="name">
+                        <h4>Name</h4>
                         <div class="form-row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Feet">
+                                <input type="text" class="form-control" placeholder="First name">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Inches">
+                                <input type="text" class="form-control" placeholder="Last name">
                             </div>
                         </div>
                     </div>
-
-                    <div class="input-div" id="weight">
-                        <div class="form-row">
-                            <div class="col-lg-6">
-                                <h4>Weight</h4>
-                                <input type="text" class="form-control" placeholder="Pounds">
-                            </div>
-                            <div class="col-lg-6">
-                                <h4>Goal Weight</h4>
-                                <input type="text" class="form-control" placeholder="Pounds">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-div" id="activity">
-                        <h4>Daily Activity</h4>
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <hp>Inactive</p>
-                            </div>
-                            <div class="col-lg-2 text-center">
-                                <p>Light Activity</p>
-                            </div>
-                            <div class="col-lg-4 text-right">
-                                <p>Moderate Activity</p>
-                            </div>
-                            <div class="col-lg-3 text-right">
-                                <p>Heavy Activity</p>
-                            </div>
-                        </div>
-                        <input type="range" class="custom-range" min="0" max="3" step="1" id="activity-input">
-                    </div>
-
-                    <div class="input-div" id="exercise">
-                        <div class="form-row">
-                            <div class="col-lg-6">
-                                <h4>Exercise (Days)</h4>
-                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>Choose...</option>
-                                    <option value="0">Zero</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    <option value="4">Four</option>
-                                    <option value="5">Five</option>
-                                    <option value="6">Six</option>
-                                    <option value="7">Seven</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6 input-div">
-                                <h4>Exercise Duration (Minutes)</h4>
-                                <input type="text" class="form-control" placeholder="Minutes">
-                            </div>
-                        </div>
-                    </div>
-<<<<<<< HEAD
-                    <button type="submit" class="btn" id="submit-btn">Submit</button>
                 </div>
-            </form>    
-        </div>
-        <div class= "col-lg-4">
-            <div class="container testimony">
-            <img src="images/Homer.jpg" alt="Avatar" style="width:90px">
-            <p><span>Homer Simpson</span> Nuculur Power Plant</p>
-            <p class ="homer">"This website helped me become MAX POWE...mmmm Donuts...DOH!"</p>
+
+                <div class="input-div" id="gender-age">
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <h4>Gender</h4>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button class="btn btn-block" id="btn-male">Male</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button class="btn btn-block" id="btn-female">Female</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4>Age</h4>
+                            <input type="text" class="form-control" placeholder="Years">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-div" id="height">
+                    <h4>Height</h4>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Feet">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Inches">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-div" id="weight">
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <h4>Weight</h4>
+                            <input type="text" class="form-control" placeholder="Pounds">
+                        </div>
+                        <div class="col-lg-6">
+                            <h4>Goal Weight</h4>
+                            <input type="text" class="form-control" placeholder="Pounds">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-div" id="activity">
+                    <h4>Daily Activity</h4>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <hp>Inactive</p>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <p>Light Activity</p>
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <p>Moderate Activity</p>
+                        </div>
+                        <div class="col-lg-3 text-right">
+                            <p>Heavy Activity</p>
+                        </div>
+                    </div>
+                    <input type="range" class="custom-range" min="0" max="3" step="1" id="activity-input">
+                </div>
+
+                <div class="input-div" id="exercise">
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <h4>Exercise (Days)</h4>
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="0">Zero</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                                <option value="6">Six</option>
+                                <option value="7">Seven</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 input-div">
+                            <h4>Exercise Duration (Minutes)</h4>
+                            <input type="text" class="form-control" placeholder="Minutes">
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="container testimony">
-            <img src="images/spongebobs.png" alt="Avatar" style="width:90px">
-            <p><span >Spongebob Squarepants</span> Chef</p>
-            <p>IM READY ,IM READY, IM READY!OH YA..!! This is AWESOME!</p>
-            </div>
-            <div class="container testimony">
-                <img src="img_ny.jpg" alt="Avatar" style="width:90px">
-                <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-                <p>John Doe saved us from a web disaster.</p>
+
+            <div class= "col-lg-4">
+                <div class="container testimony">
+                    <img src="images/Homer.jpg" alt="Avatar" style="width:90px">
+                    <p><span>Homer Simpson</span> Nuculur Power Plant</p>
+                    <p class ="homer">"This website helped me become MAX POWE...mmmm Donuts...DOH!"</p>
                 </div>
                 
                 <div class="container testimony">
-                <img src="img_ny.jpg" alt="Avatar" style="width:90px">
-                <p><span >Rebecca Flex.</span> CEO at Company.</p>
-                <p>No one is better than John Doe.</p>
-                </div>    
-            </div>
-        
-=======
-                </form>
-            </div>
-            <div class="col-lg-4">
-                <div class="container testimony">
-                    <img src="images/Homer.jpg" alt="Avatar" style="width:90px">
-                    <p>
-                        <span>Homer Simpson</span> Nuculur Power Plant</p>
-                    <p class="homer">"This website helped me become MAX POWE...mmmm Donuts...DOH!"</p>
-                </div>
-
-                <div class="container testimony">
                     <img src="images/spongebobs.png" alt="Avatar" style="width:90px">
-                    <p>
-                        <span>Spongebob Squarepants</span> Chef</p>
+                    <p><span >Spongebob Squarepants</span> Chef</p>
                     <p>IM READY ,IM READY, IM READY!OH YA..!! This is AWESOME!</p>
                 </div>
                 <div class="container testimony">
-                    <img src="img_ny.jpg" alt="Avatar" style="width:90px">
-                    <p>
-                        <span>Chris Fox.</span> CEO at Mighty Schools.</p>
-                    <p>John Doe saved us from a web disaster.</p>
-                </div>
-
-                <div class="container testimony">
-                    <img src="img_ny.jpg" alt="Avatar" style="width:90px">
-                    <p>
-                        <span>Rebecca Flex.</span> CEO at Company.</p>
-                    <p>No one is better than John Doe.</p>
+                        <img src="img_ny.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                        <p>John Doe saved us from a web disaster.</p>
+                    </div>
+                    
+                    <div class="container testimony">
+                        <img src="img_ny.jpg" alt="Avatar" style="width:90px">
+                        <p><span >Rebecca Flex.</span> CEO at Company.</p>
+                        <p>No one is better than John Doe.</p>
+                    </div>    
                 </div>
             </div>
->>>>>>> 3e12bcbe6ce119242774ef2a7a23995a0551382c
+        </div>
+        <div class="row submit">
+            <div class="col-lg-12">
+                <button type="submit" class="btn" id="submit-btn">Submit</button>
+            </div>
+        </div>
+       
 
+        <div class="row" id="results-div">
+            <div class="col-lg-12 text-center">
+                <h2>Results</h2>
+                <div class="row">
+                    <div class="col-lg-6" id="workout">
+                        <h3 class="text-center">Workout Plan</h3>
+                    </div>
 
-            <div class="row" id="results-div">
-                <div class="col-lg-12 text-center">
-                    <h2>Results</h2>
-                    <div class="row">
-                        <div class="col-lg-6" id="workout">
-                            <h3 class="text-center">Workout Plan</h3>
-                        </div>
-
-                        <div class="col-lg-6" id="mealplan">
-                            <h3 class="text-center">Meal Plan</h3>
-                        </div>
+                    <div class="col-lg-6" id="mealplan">
+                        <h3 class="text-center">Meal Plan</h3>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-        <script type="text/javascript.js" src=""></script>
+    </div>
+
+<script type="text/javascript.js" src=""></script>
 </body>
 
 </html>
