@@ -8,6 +8,14 @@
     height: auto;
 }
 
+/* .slideshow {
+    visibility: hidden;
+} */
+
+h1 {
+    color: white;
+}
+
 body {
     font-family: "Raleway", "sans-serif";
 }
