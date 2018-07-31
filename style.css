@@ -2,6 +2,10 @@
     margin: 50px;
 }
 
+.submit {
+    margin-left: 50px;
+}
+
 .header {
     background-image: url("images/header-background.png");
     max-width: 100%;
