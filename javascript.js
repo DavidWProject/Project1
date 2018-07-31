@@ -46,3 +46,4 @@ $.ajax({
   //For Health Labels
   console.log(response.hits[0].recipe.healthLabels)
 });
+
