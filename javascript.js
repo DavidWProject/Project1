@@ -14,7 +14,7 @@ function carousel() {
         myIndex = 1
     }
     x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
 var myInde = 0;
@@ -31,7 +31,7 @@ function carouse() {
         myInde = 1
     }
     x[myInde - 1].style.display = "block";
-    setTimeout(carouse, 2000); // Change image every 2 seconds
+    setTimeout(carouse, 4000); // Change image every 2 seconds
 }
 
 //Recipe API
@@ -46,3 +46,4 @@ $.ajax({
   //For Health Labels
   console.log(response.hits[0].recipe.healthLabels)
 });
+
