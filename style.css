@@ -6,6 +6,9 @@
     margin-left: 50px;
 }
 
+#head {
+    opacity: 0.90;
+}
 .header {
     background-image: url("images/header-background.png");
     max-width: 100%;
