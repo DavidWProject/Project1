@@ -12,6 +12,7 @@
     height: auto;
 }
 
+
 /* .slideshow {
     visibility: hidden;
 } */
@@ -47,6 +48,23 @@ body {
     color: white;
 }
 
+.slides{
+    position: relative;
+    margin: 0 auto .5em auto;
+}
+.slide{
+    position: relative;
+    margin: 0 auto .5em auto;
+    
+
+}
+.mySlides, .mySides{
+
+    min-width: 508px; 
+    max-width:508px; 
+    min-height:350px;
+
+}
 #results-div {
     visibility: hidden;
 }
@@ -95,5 +113,20 @@ body {
 }
 
 .homer{
+    font-family: 'Gaegu', cursive;
+}
+.spongeBob{
+    font-family: 'Gaegu', cursive;
+    
+}
+.sign{
+    font-family: 'Combo', cursive;
+    font-size: 12px;
+}
+.simba{
+    font-family: 'Gaegu', cursive;
+}
+
+.ranger{
     font-family: 'Gaegu', cursive;
 }
