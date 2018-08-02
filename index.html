@@ -19,43 +19,40 @@
 
     <div class="container-fluid">
         <div class="row">
+            <div class="col-lg-12" id="accent-strip"></div>
+        </div>
+
+        <div class="row" id="head">
             <div class="col-lg-12 text-center header">
-                <h1 class="display-2"> EasyFit<i class="fas fa-bicycle"></i> </h1>
+                <h1 class="display-2" id="heading">EasyFit<i class="fas fa-bicycle"></i> </h1>
             </div>
         </div>
 
-      <br>
+        <hr>
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
 
                     <div class="" style="max-width:500px">
-
-
-
-                          
-                     <img class="mySlides" src="images/healthyfat.jpg" style="width:110%">
-                     <img class="mySlides" src="images/fruits.jpg" style="width:110%">
-                     <img class="mySlides" src="images/bbq.jpg" style="width:110%">
-
+                        <img class="mySlides" src="images/healthyfat.jpg" style="width:110%">
+                        <img class="mySlides" src="images/fruits.jpg" style="width:110%">
+                        <img class="mySlides" src="images/bbq.jpg" style="width:110%">
                     </div>
                 </div>
+
                 <div class="col-lg-6">
-
                     <div class="slide" style="max-width:500px">
-
-
-
                         <img class="mySides" src="images/cycle.jpg" style="width:110%">
                         <img class="mySides" src="images/kayak.jpg" style="width:110%">
                         <img class="mySides" src="images/before.jpg" style="width:110%">
-
                     </div>
                 </div>
 
             </div>
         </div>
+
+        <hr id="line">
 
         <div class="row">
             <div class="col-lg-7" id="user-inputs">
@@ -79,10 +76,10 @@
                             <h4>Gender</h4>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button class="btn btn-block" id="btn-male">Male</button>
+                                    <button class="btn btn-block gender-btn" id="btn-male">Male</button>
                                 </div>
                                 <div class="col-lg-6">
-                                    <button class="btn btn-block" id="btn-female">Female</button>
+                                    <button class="btn btn-block gender-btn" id="btn-female">Female</button>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +119,7 @@
                     <h4>Daily Activity</h4>
                     <div class="row">
                         <div class="col-lg-3">
-                            <hp>Inactive</p>
+                            <p>Inactive</p>
                         </div>
                         <div class="col-lg-2 text-center">
                             <p>Light Activity</p>
@@ -134,7 +131,7 @@
                             <p>Heavy Activity</p>
                         </div>
                     </div>
-                    <input type="range" class="custom-range" min="0" max="3" step="1" id="activity-input">
+                    <input type="range" class="form-control-range" min="0" max="3" step="1" id="activity-input">
                 </div>
 
                 <div class="input-div" id="exercise">
@@ -160,9 +157,10 @@
                         </div>
                     </div>
                 </div>
+                <button onclick="mySubmit()" type="submit" class="btn" id="submit-btn">Submit</button>
             </div>
 
-            <div class= "col-lg-4">
+            <div class= "col-lg-4" id="testimonials">
                 <div class="container testimony">
                     <img src="images/Homer.jpg" alt="Avatar" style="width:90px">
                     <p class = "sign"><span>Homer Simpson</span> Nuculur Plant</p>
@@ -186,14 +184,10 @@
                         <p class = "simba">RAAWWWWWWRRRR!! NEED I SAY MORE??? HAKUNA MATADA!!</p>
                       </div>    
                 </div>
-            </div>
-        
-        <div class="row submit">
-            <div class="col-lg-12">
-                <button onclick="mySubmit()" class="btn" id="submit-btn">Submit</button>
-            </div>
+
+            </div>     
+
         </div>
-       
 
         <div class="row" id="results-div">
             <div class="col-lg-12 text-center">
