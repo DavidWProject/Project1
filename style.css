@@ -1,27 +1,26 @@
 #user-inputs {
-    margin: 50px;
+    margin: 0 50px;
 }
 
 .submit {
     margin-left: 50px;
 }
 
+#accent-strip {
+    background-color: rgb(224, 75, 30);
+    padding: 10px;
+}
+
 #head {
     opacity: 0.90;
 }
-.header {
-    background-image: url("images/header-background.png");
-    max-width: 100%;
-    height: auto;
+
+#heading {
+    font-size: 60px;
 }
 
-
-/* .slideshow {
-    visibility: hidden;
-} */
-
-h1 {
-    color: white;
+hr {
+    margin: 0 50px 25px;
 }
 
 body {
@@ -32,35 +31,49 @@ body {
     color: white;
 }
 
+i {
+    color: rgb(224, 75, 30);
+}
+
 .input-div {
     margin-bottom: 5px;
 }
 
+#line {
+    margin: 20px 50px 25px;
+}
+
 #btn-male {
-    background-color: rgba(23, 16, 53);
+    background-color: rgb(190, 64, 25);
     color: white;
 }
 
 #btn-female {
-    background-color: rgb(250, 112, 255);
+    background-color: rgb(255, 124, 47);
     color: white;
 }
 
 #submit-btn {
-    background-color: rgba(23, 16, 53);
+    background-color: rgb(224, 75, 30);
     color: white;
+}
+
+.btn:hover {
+    opacity: 0.65;
 }
 
 .slides{
     position: relative;
     margin: 0 auto .5em auto;
 }
+
 .slide{
     position: relative;
     margin: 0 auto .5em auto;
     
 
 }
+
 .mySlides, .mySides{
 
     min-width: 508px; 
@@ -68,18 +81,23 @@ body {
     min-height:350px;
 
 }
+
 #results-div {
     visibility: hidden;
 }
+
 /*testimonials section css*/
 
+#testimonials {
+    background-color: rgb(224, 75, 30);
+    border-radius: 5px;
+}
+
 .testimony {
-    
     background-color:white;
     border-radius: 5px;
     padding: 5px;
-    margin: 5px 0;
-    margin-top: 50px;
+    margin: 15px 5px 0;
 }
 
 /* Clear floats after containers */
