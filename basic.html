@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EasyFit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12" id="accent-strip"></div>
+        </div>
+
+        <div class="row" id="head">
+            <div class="col-lg-12 text-center header">
+                <h1 class="display-2" id="heading">EasyFit<i class="fas fa-bicycle"></i> </h1>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="" style="max-width:500px">
+                        <img class="mySlides" src="assets/images/healthyfat.jpg" style="width:110%">
+                        <img class="mySlides" src="assets/images/fruits.jpg" style="width:110%">
+                        <img class="mySlides" src="assets/images/bbq.jpg" style="width:110%">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="slide" style="max-width:500px">
+                        <img class="mySides" src="assets/images/cycle.jpg" style="width:110%">
+                        <img class="mySides" src="assets/images/kayak.jpg" style="width:110%">
+                        <img class="mySides" src="assets/images/before.jpg" style="width:110%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr id="line">
+
+        <div class="row">
+            <div class="col-lg-7" id="user-inputs">
+                <div class="form-group">
+                    <div class="input-div" id="name">
+                        <h4>Name</h4>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-div" id="gender-age">
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <h4>Gender</h4>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button class="btn btn-block gender-btn" id="btn-male">Male</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button class="btn btn-block gender-btn" id="btn-female">Female</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4>Age</h4>
+                            <input type="text" class="form-control" placeholder="Years" id="age">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-div" id="height">
+                    <h4>Height</h4>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Feet" id="feet">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Inches" id = "inches">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-div" id="weight">
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <h4>Weight</h4>
+                            <input type="text" class="form-control" placeholder="Pounds" id = "weight">
+                        </div>
+                        <div class="col-lg-6">
+                            <h4>Goal Weight</h4>
+                            <input type="text" class="form-control" placeholder="Pounds">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-div" id="activity">
+                    <h4>Daily Activity</h4>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p>Inactive</p>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                            <p>Light Activity</p>
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <p>Moderate Activity</p>
+                        </div>
+                        <div class="col-lg-3 text-right">
+                            <p>Heavy Activity</p>
+                        </div>
+                    </div>
+                    <input type="range" class="form-control-range" min="0" max="3" step="1" id="activity-input">
+                </div>
+
+                <div class="input-div" id="exercise">
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <h4>Exercise (Days)</h4>
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="0">Zero</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                                <option value="6">Six</option>
+                                <option value="7">Seven</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 input-div">
+                            <h4>Exercise Duration (Minutes)</h4>
+                            <input type="text" class="form-control" placeholder="Minutes" id="duration">
+                        </div>
+                    </div>
+                </div>
+                <button onclick="mySubmit()" type="submit" class="btn" id="submit-btn">Submit</button>
+            </div>
+
+            <div class= "col-lg-4" id="testimonials">
+                <div class="container testimony">
+                    <img src="assets/images/Homer.jpg" alt="Avatar" style="width:90px">
+                    <p class = "sign"><span>Homer Simpson</span> Nuculur Plant</p>
+                    <p class ="homer">"This website helped me become MAX POWE...mmmm Donuts...DOH!"</p>
+                  </div>
+                  
+                  <div class="container testimony">
+                    <img src="assets/images/spongebobs.png" alt="Avatar" style="width:90px">
+                    <p class = "sign"><span >Spongebob Squarepants</span> Chef</p>
+                    <p class ="spongeBob">IM READY ,IM READY, IM READY!!!   </p>
+                  </div>
+                  <div class="container testimony">
+                        <img src="assets/images/blueranger.jpg" alt="Avatar" style="width:90px">
+                        <p class = "sign"><span>Billy Something</span> Blue Ranger</p>
+                        <p class = "ranger">WOW! This site helped my butt look great in these spandex! Now I can feel confident when I fight putties! Move out the way red ranger!   </p>
+                      </div>
+                      
+                      <div class="container testimony">
+                        <img src="assets/images/roar.png" alt="Avatar" style="width:90px">
+                        <p class ="sign"><span >Simba ?? </span> King of the Jungle</p>
+                        <p class = "simba">RAAWWWWWWRRRR!! NEED I SAY MORE??? HAKUNA MATADA!!</p>
+                      </div>    
+                </div>
+
+            </div>     
+
+        </div>
+
+        <div class="row" id="results-div">
+            <div class="col-lg-12 text-center">
+                <h2>Results</h2>
+                <div class="row">
+                    <div class="col-lg-6" id="workout">
+                        <h3 class="text-center">Workout Plan</h3>
+                    </div>
+
+                    <div class="col-lg-6" id="mealplan">
+                        <h3 class="text-center">Meal Plan</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+<script src="assets/javascript/tdee.js"></script>
+</body>
+
+</html>
