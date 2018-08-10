@@ -76,10 +76,10 @@
                             <h4>Gender</h4>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button class="btn btn-block gender-btn" id="btn-male">Male</button>
+                                    <button class="btn btn-block gender-btn" id="male" onclick = "myGender(this.id)">Male</button>
                                 </div>
                                 <div class="col-lg-6">
-                                    <button class="btn btn-block gender-btn" id="btn-female">Female</button>
+                                    <button class="btn btn-block gender-btn" id="female" onclick = "myGender(this.id)">Female</button>
                                 </div>
                             </div>
                         </div>
@@ -108,31 +108,9 @@
                             <h4>Weight</h4>
                             <input type="text" class="form-control" placeholder="Pounds" id = "weight">
                         </div>
-                        <div class="col-lg-6">
-                            <h4>Goal Weight</h4>
-                            <input type="text" class="form-control" placeholder="Pounds">
-                        </div>
                     </div>
                 </div>
 
-                <div class="input-div" id="activity">
-                    <h4>Daily Activity</h4>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p>Inactive</p>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <p>Light Activity</p>
-                        </div>
-                        <div class="col-lg-4 text-right">
-                            <p>Moderate Activity</p>
-                        </div>
-                        <div class="col-lg-3 text-right">
-                            <p>Heavy Activity</p>
-                        </div>
-                    </div>
-                    <input type="range" class="form-control-range" min="0" max="3" step="1" id="activity-input">
-                </div>
 
                 <div class="input-div" id="exercise">
                     <div class="form-row">
@@ -157,6 +135,28 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    
+                    <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="ectomorph" autocomplete="off" checked>
+                          <img src="assets/images/ectomorph.png" height="200" width="100"> 
+                          <p>Ectomorph</p>
+                    </label>
+                    
+                    <label class="btn btn-secondary">
+                          <input type="radio" name="options"  id="mesomorph" autocomplete="off"> 
+                          <img src="assets/images/ectomorph.png" height="200" width="100">
+                          <p>Mesomorph</p> 
+                    </label>
+                    
+                    <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="endomorph" autocomplete="off"> 
+                          <img src="assets/images/ectomorph.png" height="200" width="100">
+                          <p>Endomorph</p> 
+                    </label>
+                </div>
+                <br>
                 <button onclick="mySubmit()" type="submit" class="btn" id="submit-btn">Submit</button>
             </div>
 
@@ -206,7 +206,8 @@
     </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/javascript/javascript.js"></script>
 <script src="assets/javascript/tdee.js"></script>
 </body>

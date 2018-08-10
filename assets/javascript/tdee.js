@@ -1,5 +1,6 @@
 console.log("you are here now");
 
+
 function TDEE (data) {
 	this.weight = data.weight || 60
 	this.height = data.height || 180
@@ -107,8 +108,36 @@ var qmmr = {
 	ratios: ratios[0]
 }*/
 
+var gender = '';
+
+function myGender(id)
+{
+	console.log("gender button pressed");
+
+	if(id === 'male')
+	{
+		$("#male").css('opacity',".5");
+		$("#female").css('opacity',"1");
+	}
+
+	if(id === 'female')
+	{
+		$('#female').css('opacity',".5");
+		$("#male").css('opacity',"1");
+	}
+
+	gender = id;
+}
+
 function mySubmit()
 {
+	var bodytype = '';
+
+	if($('#endomorph').is(':checked')) { bodytype = 'endomorph' }
+	if($('#ectomorph').is(':checked')) { bodytype = 'ectomorph' }
+	if($('#mesomorph').is(':checked')) { bodytype = 'mesomorph' }
+
+	console.log(gender);
 
 	var ageInput = document.getElementById("age").value;
 	
@@ -135,8 +164,8 @@ function mySubmit()
         weight: weightInput,
         height: 184,
         age: ageInput,                        //34
-        sex: 'male',
-        bodyType: 'mesomorph',
+        sex: gender,
+        bodyType: bodytype,
         numberOfWorkouts: workoutInput,
         durationOfWorkout: durationInput,
         ratios: ratios[0]
@@ -156,6 +185,8 @@ console.log('Your daily macronutrients:')
 console.log('Proteins: ' + tdee.getMacronutrients().protein + 'g')
 console.log('Carbs: ' + tdee.getMacronutrients().carb + 'g')
 console.log('Fats: ' + tdee.getMacronutrients().fat + 'g')
+console.log('Bodytype: ' + qmmr.bodyType)
+console.log('Sex: ' + qmmr.sex)
 
 
 }

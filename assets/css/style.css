@@ -43,12 +43,12 @@ i {
     margin: 20px 50px 25px;
 }
 
-#btn-male {
+#male {
     background-color: rgb(190, 64, 25);
     color: white;
 }
 
-#btn-female {
+#female {
     background-color: rgb(255, 124, 47);
     color: white;
 }
@@ -150,4 +150,12 @@ i {
 
 .ranger{
     font-family: 'Gaegu', cursive;
+}
+
+.btn-danger{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    
+
 }
