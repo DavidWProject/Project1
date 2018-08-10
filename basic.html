@@ -8,7 +8,8 @@
     <title>EasyFit</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -24,7 +25,9 @@
 
         <div class="row" id="head">
             <div class="col-lg-12 text-center header">
-                <h1 class="display-2" id="heading">EasyFit<i class="fas fa-bicycle"></i> </h1>
+                <h1 class="display-2" id="heading">EasyFit
+                    <i class="fas fa-bicycle"></i>
+                </h1>
             </div>
         </div>
 
@@ -61,10 +64,10 @@
                         <h4>Name</h4>
                         <div class="form-row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="First name" >
+                                <input type="text" class="form-control" placeholder="First name">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name" >
+                                <input type="text" class="form-control" placeholder="Last name">
                             </div>
                         </div>
                     </div>
@@ -76,10 +79,10 @@
                             <h4>Gender</h4>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button class="btn btn-block gender-btn" id="male" onclick = "myGender(this.id)">Male</button>
+                                    <button class="btn btn-block gender-btn" id="male" onclick="myGender(this.id)">Male</button>
                                 </div>
                                 <div class="col-lg-6">
-                                    <button class="btn btn-block gender-btn" id="female" onclick = "myGender(this.id)">Female</button>
+                                    <button class="btn btn-block gender-btn" id="female" onclick="myGender(this.id)">Female</button>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +100,7 @@
                             <input type="text" class="form-control" placeholder="Feet" id="feet">
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Inches" id = "inches">
+                            <input type="text" class="form-control" placeholder="Inches" id="inches">
                         </div>
                     </div>
                 </div>
@@ -106,7 +109,7 @@
                     <div class="form-row">
                         <div class="col-lg-6">
                             <h4>Weight</h4>
-                            <input type="text" class="form-control" placeholder="Pounds" id = "weight">
+                            <input type="text" class="form-control" placeholder="Pounds" id="weight">
                         </div>
                     </div>
                 </div>
@@ -137,79 +140,395 @@
                 </div>
 
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    
+
                     <label class="btn btn-secondary active">
-                          <input type="radio" name="options" id="ectomorph" autocomplete="off" checked>
-                          <img src="assets/images/ectomorph.png" height="200" width="100"> 
-                          <p>Ectomorph</p>
+                        <input type="radio" name="options" id="ectomorph" autocomplete="off" checked>
+                        <img src="assets/images/ectomorph.png" height="200" width="100">
+                        <p>Ectomorph</p>
                     </label>
-                    
+
                     <label class="btn btn-secondary">
-                          <input type="radio" name="options"  id="mesomorph" autocomplete="off"> 
-                          <img src="assets/images/ectomorph.png" height="200" width="100">
-                          <p>Mesomorph</p> 
+                        <input type="radio" name="options" id="mesomorph" autocomplete="off">
+                        <img src="assets/images/ectomorph.png" height="200" width="100">
+                        <p>Mesomorph</p>
                     </label>
-                    
+
                     <label class="btn btn-secondary">
-                          <input type="radio" name="options" id="endomorph" autocomplete="off"> 
-                          <img src="assets/images/ectomorph.png" height="200" width="100">
-                          <p>Endomorph</p> 
+                        <input type="radio" name="options" id="endomorph" autocomplete="off">
+                        <img src="assets/images/ectomorph.png" height="200" width="100">
+                        <p>Endomorph</p>
                     </label>
                 </div>
                 <br>
                 <button onclick="mySubmit()" type="submit" class="btn" id="submit-btn">Submit</button>
             </div>
 
-            <div class= "col-lg-4" id="testimonials">
+            <div class="col-lg-4" id="testimonials">
                 <div class="container testimony">
                     <img src="assets/images/Homer.jpg" alt="Avatar" style="width:90px">
-                    <p class = "sign"><span>Homer Simpson</span> Nuculur Plant</p>
-                    <p class ="homer">"This website helped me become MAX POWE...mmmm Donuts...DOH!"</p>
-                  </div>
-                  
-                  <div class="container testimony">
-                    <img src="assets/images/spongebobs.png" alt="Avatar" style="width:90px">
-                    <p class = "sign"><span >Spongebob Squarepants</span> Chef</p>
-                    <p class ="spongeBob">IM READY ,IM READY, IM READY!!!   </p>
-                  </div>
-                  <div class="container testimony">
-                        <img src="assets/images/blueranger.jpg" alt="Avatar" style="width:90px">
-                        <p class = "sign"><span>Billy Something</span> Blue Ranger</p>
-                        <p class = "ranger">WOW! This site helped my butt look great in these spandex! Now I can feel confident when I fight putties! Move out the way red ranger!   </p>
-                      </div>
-                      
-                      <div class="container testimony">
-                        <img src="assets/images/roar.png" alt="Avatar" style="width:90px">
-                        <p class ="sign"><span >Simba ?? </span> King of the Jungle</p>
-                        <p class = "simba">RAAWWWWWWRRRR!! NEED I SAY MORE??? HAKUNA MATADA!!</p>
-                      </div>    
+                    <p class="sign">
+                        <span>Homer Simpson</span> Nuculur Plant</p>
+                    <p class="homer">"This website helped me become MAX POWE...mmmm Donuts...DOH!"</p>
                 </div>
 
-            </div>     
+                <div class="container testimony">
+                    <img src="assets/images/spongebobs.png" alt="Avatar" style="width:90px">
+                    <p class="sign">
+                        <span>Spongebob Squarepants</span> Chef</p>
+                    <p class="spongeBob">IM READY ,IM READY, IM READY!!! </p>
+                </div>
+                <div class="container testimony">
+                    <img src="assets/images/blueranger.jpg" alt="Avatar" style="width:90px">
+                    <p class="sign">
+                        <span>Billy Something</span> Blue Ranger</p>
+                    <p class="ranger">WOW! This site helped my butt look great in these spandex! Now I can feel confident when I fight putties!
+                        Move out the way red ranger! </p>
+                </div>
+
+                <div class="container testimony">
+                    <img src="assets/images/roar.png" alt="Avatar" style="width:90px">
+                    <p class="sign">
+                        <span>Simba ?? </span> King of the Jungle</p>
+                    <p class="simba">RAAWWWWWWRRRR!! NEED I SAY MORE??? HAKUNA MATADA!!</p>
+                </div>
+            </div>
 
         </div>
 
-        <div class="row" id="results-div">
-            <div class="col-lg-12 text-center">
-                <h2>Results</h2>
-                <div class="row">
-                    <div class="col-lg-6" id="workout">
-                        <h3 class="text-center">Workout Plan</h3>
+    </div>
+
+    <div class="row" id="results-div">
+        <div class="col-lg-12 text-center">
+            <h2>Results</h2>
+            <div class="row">
+                <div class="col-lg-6" id="workout">
+                    <h3 class="text-center">Workout Plan</h3>
+                </div>
+
+                <div class="col-lg-6" id="mealplan">
+                    <h3 class="text-center">Meal Plan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row recipe-portion">
+        <div class="col-md-12">
+            <h1 class="typeDietText">Type of Diet</h1>
+            <div class="row diet-labels">
+
+                <div class="col-sm-2">
+
+                    <div class="button_su">
+                        <span class="su_button_circle">
+                        </span>
+                        <button class="balanced recipe-btn button_su_inner" value="balanced">
+
+                            <span class="button_text_container">
+                                Balanced Diet
+                            </span>
+                        </button>
                     </div>
 
-                    <div class="col-lg-6" id="mealplan">
-                        <h3 class="text-center">Meal Plan</h3>
+                </div>
+
+                <div class="col-sm-2">
+
+                    <div class="button_su">
+                        <span class="su_button_circle">
+                        </span>
+                        <button class="high-fiber recipe-btn button_su_inner" value="high-fiber">
+
+                            <span class="button_text_container">
+                                High Protein Diet
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-2">
+
+                    <div class="button_su">
+                        <span class="su_button_circle">
+                        </span>
+                        <button class="high-protein recipe-btn button_su_inner" value="high-protein">
+
+                            <span class="button_text_container">
+                                High Protein Diet
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <div class="button_su">
+                        <span class="su_button_circle">
+                        </span>
+                        <button class="low-carb recipe-btn button_su_inner" value="low-carb">
+
+                            <span class="button_text_container">
+                                Low Sodium Diet
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <div class="button_su">
+                        <span class="su_button_circle">
+                        </span>
+                        <button class="low-fat recipe-btn button_su_inner" value="low-fat">
+
+                            <span class="button_text_container">
+                                Low Sodium Diet
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <div class="button_su">
+                        <span class="su_button_circle">
+                        </span>
+                        <button class="low-sodium recipe-btn button_su_inner" value="low-sodium">
+
+                            <span class="button_text_container">
+                                Low Sodium Diet
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="row recipe-labels">
+
+                    <div class="content col-lg-3">
+                        <h1>Main Ingredient</h1>
+
+                        <div class="button_su ml-1 pb-1 mt-1">
+                            <span class="su_button_circle">
+                            </span>
+                            <input type="text" class="custom-ingredients" placeholder=" Input Custom Ingredient" value="">
+                        </div>
+
+                        <div class="button_container">
+                            <div class="button_su">
+                                <span class="su_button_circle">
+                                </span>
+                                <button href="#" class="button_su_inner" value="chicken">
+                                    <span class="button_text_container">
+                                        Chicken
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="button_su">
+                                <span class="su_button_circle">
+                                </span>
+                                <button href="#" class="button_su_inner" value="steak">
+                                    <span class="button_text_container">
+                                        Steak
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="button_su">
+                                <span class="su_button_circle">
+                                </span>
+                                <button href="#" class="button_su_inner" value="tuna">
+                                    <span class="button_text_container">
+                                        Tuna
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="button_su">
+                                <span class="su_button_circle">
+                                </span>
+                                <button href="#" class="button_su_inner" value="salad">
+                                    <span class="button_text_container">
+                                        Pork
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="health-concerns">
+                            <h1>Food Restrictions</h1>
+                            <div class="button_container1">
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="vegan">
+                                        <span class="button_text_container">
+                                            Vegan
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="vegetarian">
+                                        <span class="button_text_container">
+                                            Vegetarian
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="paleo">
+                                        <span class="button_text_container">
+                                            Paleo
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="dairy-free">
+                                        <span class="button_text_container">
+                                            Dairy-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="gluten-free">
+                                        <span class="button_text_container">
+                                            Gluten-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="wheat-free">
+                                        <span class="button_text_container">
+                                            Wheat-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="fat-free">
+                                        <span class="button_text_container">
+                                            Fat-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="low-sugar">
+                                        <span class="button_text_container">
+                                            Low-Sugar
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="egg-free">
+                                        <span class="button_text_container">
+                                            Egg-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="peanut-free">
+                                        <span class="button_text_container">
+                                            Peanut-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="tree-nut-free">
+                                        <span class="button_text_container">
+                                            Tree-Nut-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="soy-free">
+                                        <span class="button_text_container">
+                                            Soy-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="fish-free">
+                                        <span class="button_text_container">
+                                            Fish-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="button_su">
+                                    <span class="su_button_circle">
+                                    </span>
+                                    <button href="#" class="button_su_inner1" value="shellfish-free">
+                                        <span class="button_text_container">
+                                            Shellfish-Free
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="generated-recipe">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/javascript/javascript.js"></script>
-<script src="assets/javascript/tdee.js"></script>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+    <script src="assets/javascript/tdee.js"></script>
 </body>
 
 </html>
