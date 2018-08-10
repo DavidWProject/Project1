@@ -218,7 +218,7 @@ $(".recipe-btn").on("click", function () {
 			function recipeSearch() {
 
 
-				var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&healthLabels=" + healthRestriction;
+				var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&healthLabels=" + healthRestriction + "&calories=591-722";
 
 				$.ajax({
 					url: queryURL,
@@ -251,7 +251,7 @@ $(".recipe-btn").on("click", function () {
 		})
 		
 	
-		// var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction;
+		// var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction + "&calories=591-722";
 		// var healthRestriction = $(this).val(); 
 	
 		// $.ajax({
@@ -299,7 +299,7 @@ $(".recipe-btn").on("click", function () {
 				function recipeSearch() {
 
 
-					var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType;
+					var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&calories=591-722";
 
 					$.ajax({
 						url: queryURL,
@@ -341,7 +341,7 @@ $(".recipe-btn").on("click", function () {
 		function recipeSearch() {
 
 
-			var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType;
+			var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&calories=591-722";
 
 			$.ajax({
 				url: queryURL,
@@ -374,45 +374,6 @@ $(".recipe-btn").on("click", function () {
 
 	})
 })
-
-// $(document).on("click", ".button_su_inner1", function () {
-
-// 	$(".generated-recipe").empty(); 
-
-// 	var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction;
-// 	var healthRestriction = $(this).val(); 
-
-// 	$.ajax({
-// 		url: queryURL,
-// 		method: "GET"
-// 	}).then(function (response) {
-
-// 		results = response.hits;
-// 		for (var i = 0; i < results.length; i++) {
-// 			console.log(results[i].recipe);
-// 			console.log(results[i].recipe.label);
-// 			var Div = $("<div>");
-// 			var RName = $("<h1>").text(RecipeName).addClass("recipe-name");
-// 			var RecipeName = results[i].recipe.label;
-// 			var RecipeImg = results[i].recipe.image;
-// 			var RecipeLink = results[i].recipe.url;
-// 			var image = $("<img>").attr("src", RecipeImg).addClass("img-food");
-// 			var link = $("<a>").attr("href", RecipeLink).addClass("img-link");
-
-// 			Div.append(RName);
-// 			Div.append(image);
-// 			Div.append(link);
-// 			link.text("Recipe Link: " + RecipeLink);
-
-// 			$(".generated-recipe").prepend(Div);
-
-// 		}
-// 	});
-// }); 
-
-
-
-
 
 $(".button_su_inner").mouseenter(function (e) {
 	var parentOffset = $(this).offset();
