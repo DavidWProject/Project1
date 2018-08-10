@@ -1,4 +1,9 @@
 
+function showNutrition(){
+    $("#nutritionPage").show();
+    $("#workoutPage").hide();
+}
+
 console.log("nutrition loaded")
 
 var APPID = 'a140ced0';
@@ -16,7 +21,6 @@ if (searchType === 'basic')
 {
     searchParams = "nf_total_fat,nf_total_carbohydrate,nf_protein,nf_serving_size_unit,nf_serving_size_qty,nf_serving_weight_grams,brand_name"
 }
-
 
 
 var caloriesToAdd;
@@ -153,6 +157,8 @@ var favoriteObjects = [];
 
 function addToDiet(id)
 {
+    console.log(foodObjects);
+    
     itemsInDiet++;
 
     var servingSize = $('#servingSize').val();
@@ -165,6 +171,7 @@ function addToDiet(id)
     $('#dietContainer').append('<div class="col-lg-2" id ='+div+'>'+trimmedName+'</div>');
     
     console.log(servingSize);
+    
 
     var calories = (foodObjects[id].total_calories * servingSize).toFixed(1);
     var fat = (foodObjects[id].total_fat * servingSize).toFixed(1);
@@ -192,6 +199,8 @@ function addToDiet(id)
     });
     $('#'+div).append(r);
     addToTotal(calories, fat, carbs, protein)
+
+    console.log(favoriteObjects);
 }
 
 function addToTotal(calories, fat, carbs, protein)
@@ -237,3 +246,4 @@ function removeFromDiet(id)
    $('#total').append('<br>'+totalProtein+"g / "+userProtein);
 
 }
+
