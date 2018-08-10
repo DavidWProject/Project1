@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="container-fluid">
+    
     
         <div class="row">
             <div class="col-lg-12" id="accent-strip"></div>
@@ -28,6 +28,10 @@
             </div>
         </div>
 
+        <button type="button" class="btn btn-info" onclick = "showNutrition()">Nutrition</button>
+        <button type="button" class="btn btn-info" onclick = "showWorkout(); workout();">Workout</button>
+
+    <div class="container-fluid" id = "nutritionPage">
         <div class="row">
             <div class="col-lg-4">
                 <form>
@@ -56,7 +60,7 @@
 
 
                 </form>
-                <button onclick="macroSubmit()" class="btn btn-primary">Submit</button>
+                <button onclick="macroSubmit();" class="btn btn-primary">Submit</button>
             </div>
 
             <div class="col-lg-6">
@@ -89,7 +93,7 @@
                     <label for="foodInput">Food Input</label>
                     <input type="food" class="form-control" id="foodInput" aria-describedby="emailHelp" placeholder="Search">
                     <small id="emailHelp" class="form-text text-muted">Search for Food</small>
-                    <button onclick="myFunction()" class="btn btn-primary">Submit</button>
+                    <button onclick="myFunction(); searchWorkout();" class="btn btn-primary">Submit</button>
                     </div>  
             </div>
 
@@ -137,12 +141,79 @@
     
     </div>
 
+    <div class="container-fluid" id = "workoutPage" style = "display: none">
+        <div class="form-group">
+            <label for="workoutInput">Exercise Search</label>
+            <input type="workout" class="form-control" id="workoutInput" aria-describedby="workout" placeholder="Search">
+            <small id="emailHelp" class="form-text text-muted">Search for Exercise</small>
+            <button onclick="searchWorkout();" class="btn btn-primary">Submit</button>
+        </div> 
+        
+        <div class="col-lg-8">
+            <div class="tab-content" id="workoutContent">
+                <div class="tab-pane active" id="workout0" role="tabpanel"></div>
+                <div class="tab-pane" id="workout1" role="tabpanel"></div>
+                <div class="tab-pane" id="workout2" role="tabpanel"></div>
+                <div class="tab-pane" id="workout3" role="tabpanel"></div>
+                <div class="tab-pane" id="workout4" role="tabpanel"></div>
+                <div class="tab-pane" id="workout5" role="tabpanel"></div>
+                <div class="tab-pane" id="workout6" role="tabpanel"></div>
+                <div class="tab-pane" id="workout7" role="tabpanel"></div>
+                <div class="tab-pane" id="workout8" role="tabpanel"></div>
+                <div class="tab-pane" id="workout9" role="tabpanel"></div>
+                <div class="tab-pane" id="workout10" role="tabpanel"></div>
+                <div class="tab-pane" id="workout11" role="tabpanel"></div>
+                <div class="tab-pane" id="workout12" role="tabpanel"></div>
+                <div class="tab-pane" id="workout13" role="tabpanel"></div>
+                <div class="tab-pane" id="workout14" role="tabpanel"></div>
+                <div class="tab-pane" id="workout15" role="tabpanel"></div>
+                <div class="tab-pane" id="workout16" role="tabpanel"></div>
+                <div class="tab-pane" id="workout17" role="tabpanel"></div>
+                <div class="tab-pane" id="workout18" role="tabpanel"></div>
+                <div class="tab-pane" id="workout19" role="tabpanel"></div>
+                <div class="tab-pane" id="workout20" role="tabpanel"></div>
+            </div>       
+        </div>
+
+        <div class="col-lg-4">
+            
+        </div>
+
+        <div class="list-group" id="workoutList" role="tablist">
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout0" id = "wr0" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout1" id = "wr1" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout2" id = "wr2" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout3" id = "wr3" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout4" id = "wr4" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout5" id = "wr5" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout6" id = "wr6" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout7" id = "wr7" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout8" id = "wr8" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout9" id = "wr9" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout10" id = "wr10" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout11" id = "wr11" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout12" id = "wr12" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout13" id = "wr13" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout14" id = "wr14" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout15" id = "wr15" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout16" id = "wr16" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout17" id = "wr17" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout18" id = "wr18" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout19" id = "wr19" role="tab" style = "display: none"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#workout20" id = "wr20" role="tab" style = "display: none"></a>
+        </div>
+
+
+    </div>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/nutrition.js"></script>
+
 <script src="assets/javascript/tdee.js"></script>
+<script type="text/javascript" src="assets/javascript/workout.js"></script>
+<script type="text/javascript" src="assets/javascript/nutrition.js"></script>
 </body>
 
 </html>
