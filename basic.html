@@ -149,19 +149,47 @@
 
                     <label class="btn btn-secondary">
                         <input type="radio" name="options" id="mesomorph" autocomplete="off">
-                        <img src="assets/images/ectomorph.png" height="200" width="100">
+                        <img src="assets/images/mesomorph.png" height="200" width="100">
                         <p>Mesomorph</p>
                     </label>
 
                     <label class="btn btn-secondary">
                         <input type="radio" name="options" id="endomorph" autocomplete="off">
-                        <img src="assets/images/ectomorph.png" height="200" width="100">
+                        <img src="assets/images/endomorph.png" height="200" width="100">
                         <p>Endomorph</p>
                     </label>
                 </div>
+                <p>What is this? Click below to learn more about somatotypes(body types).</p>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">More Info</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        
+                      </div>
+                      <div class="modal-body">
+                        <p>Ectomorphs have a thin build with small joints and stringy muscle bellies. Ectomorphs should eat a lot compared to other body types mainly protein and carbs. Lifing heavy while maintaining form is key to growing big (along with diet). Also should not overwork the body with aerobic excercises.</p>
+                        <p>Mesomorphs have a narrow waist with thinner joints and usually have round muscle bellies. Mesomorphs should lift a fair amount of weight along with aerobic workouts regularly. Mesomorphs have no problem getting bulky but can fat can easily creep up. Be careful!</p>
+                        <p>Endomorphs have a thick waist with wide joints, hips are usually wide(r) as their clavicles and tend to have shorter limbs than other body types. Endomorphs can put on pounds easily along with more muscle than other types, although if you are working out in a fast pace and regularly but still seem to gain or not lose any weight then a change in diet is needed. </p>
+                      
+                        <p>source: Bodybuilding.com</p>
+                    </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
                 <br>
                 <button onclick="mySubmit()" type="submit" class="btn" id="submit-btn">Submit</button>
             </div>
+
 
             <div class="col-lg-4" id="testimonials">
                 <div class="container testimony">
@@ -190,6 +218,11 @@
                     <p class="sign">
                         <span>Simba ?? </span> King of the Jungle</p>
                     <p class="simba">RAAWWWWWWRRRR!! NEED I SAY MORE??? HAKUNA MATADA!!</p>
+                </div>
+                <div class="container testimony">
+                    <img src="assets/images/redranger.jpg" alt="Avatar" style="width:90px">
+                    <p class = "sign"><span>Jason</span>L-E-A-D-E-R ranger</p>
+                    <p class = "ranger">OKAY OKAY! I used this site since blue ranger was getting a little too confident. But we know who the cooler power ranger is. Pfft blue ranger who?</p>
                 </div>
             </div>
 
