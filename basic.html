@@ -89,27 +89,33 @@
                         <div class="col-lg-6">
                             <h4>Age</h4>
                             <input type="text" class="form-control" placeholder="Years" id="age">
+                            <div id = "ageError" style = "display: none; color: red">Please enter a valid age</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="input-div" id="height">
+                <div class="input-div">
                     <h4>Height</h4>
                     <div class="form-row">
                         <div class="col">
                             <input type="text" class="form-control" placeholder="Feet" id="feet">
+                            <div id = "feetError" style = "display: none; color: red">Please enter a valid value for feet</div>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" placeholder="Inches" id="inches">
+                            <div id = "inchesError" style = "display: none; color: red">Please enter a valid value for inches</div>
+
                         </div>
                     </div>
                 </div>
 
-                <div class="input-div" id="weight">
+                <div class="input-div">
                     <div class="form-row">
                         <div class="col-lg-6">
                             <h4>Weight</h4>
                             <input type="text" class="form-control" placeholder="Pounds" id="weight">
+                            <div id = "weightError" style = "display: none; color: red">Please enter a valid weight</div>
+
                         </div>
                     </div>
                 </div>
@@ -131,10 +137,13 @@
                                 <option value="6">Six</option>
                                 <option value="7">Seven</option>
                             </select>
+                            <div id = "workoutError" style = "display: none; color: red">Please choose a day</div>
                         </div>
                         <div class="col-lg-6 input-div">
                             <h4>Exercise Duration (Minutes)</h4>
                             <input type="text" class="form-control" placeholder="Minutes" id="duration">
+                            <div id = "durationError" style = "display: none; color: red">Please enter a valid duration</div>
+
                         </div>
                     </div>
                 </div>
