@@ -1,6 +1,6 @@
 var id = 0;
 var eng = [];
-
+var itemsInWorkout = 0;
 
 function showWorkout(){
     $("#nutritionPage").hide();
@@ -84,9 +84,22 @@ function searchWorkout(){
             
 
             var labelDiv = "#workout"+stop;
+            $(labelDiv).empty();
             $(labelDiv).append("Name: "+eng[i].name + "<br>")
             $(labelDiv).append("Category: "+eng[i].category + "<br>")
             $(labelDiv).append("Description: "+eng[i].description + "<br>")
+
+            var r=$('<input/>').attr({
+                type: "button",
+                onclick: "addToWorkout(this.id)",
+                class: "btn btn-success",
+                id: i,
+                value: 'Add to Workout Plan'
+            });
+   
+            $(labelDiv).append(r);
+            $(labelDiv).append("<br>");  
+
    
             stop++;
             
@@ -112,6 +125,27 @@ function searchWorkout(){
         e.preventDefault()
         $(this).tab('show')
         console.log(this);
+        $("#workoutInputContainer").show();
     })
 
 
+function addToWorkout(id)
+{
+    itemsInWorkout++;
+    var div = 'workout'+itemsInWorkout
+
+    var sets = $('#setInput').val();
+    
+    $('#personalWorkoutContainer').append('<div class="col-lg-2" id ='+div+'>'+sets+" "+eng[id].name+'</div>');
+
+    var r=$('<input/>').attr({
+        type: "button",
+        onclick: "removeFromDiet(this.id)",
+        class: "btn btn-danger",
+        id: 'diet'+itemsInDiet,
+        value: 'x'
+    });
+
+    $(div).append(r)
+    
+}
