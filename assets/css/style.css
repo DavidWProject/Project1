@@ -79,7 +79,7 @@ i {
 }
 
 #results-div {
-    visibility: hidden;
+    display: none; 
 }
 
 /*testimonials section css*/

@@ -93,9 +93,7 @@ var ratios = [{
 ]
 
 /*
-
 var ageInput;
-
 var qmmr = {
 	weight: 84.8,
 	height: 184,
@@ -126,6 +124,8 @@ function myGender(id) {
 }
 
 function mySubmit() {
+
+
 
 	var bodytype = '';
 
@@ -190,6 +190,35 @@ function mySubmit() {
 	console.log('Bodytype: ' + qmmr.bodyType)
 	console.log('Sex: ' + qmmr.sex)
 
+	$("#results-div").fadeIn("slow"); 
+
+	var resultdiv = $(".results-populate-here"); 
+	var div = $("<div>"); 
+	var lineZero = $("<h3>").text("For a " + qmmr.sex + " with a bodytype of " + qmmr.bodyType); 
+	var lineOne = $("<h3>").text("Type of diet: " + qmmr.ratios.name); 
+	var lineTwo = $("<h3>").text("Max daily in-take of Carbs: " + qmmr.ratios.carb + "%"); 
+	var lineThree = $("<h3>").text("Max daily intake of Protein: " + qmmr.ratios.protein + "%"); 
+	var lineFour = $("<h3>").text("Max daily in-take of Fats: " + qmmr.ratios.fat + "%"); 
+
+	div.append(lineZero); 
+	div.append(lineOne); 
+	div.append(lineTwo); 
+	div.append(lineThree); 
+	div.append(lineFour); 
+
+	$(resultdiv).append(div);	
+
+	var macronutrients = $(".macronutrients"); 
+	var div1 = $("<div>"); 
+	var lineZero0 = $("<h3>").text("Max intake of protein: " + tdee.getMacronutrients().protein + "g"); 
+	var lineOne1 = $("<h3>").text("Max intake of Carbs: " + tdee.getMacronutrients().carb + "g");
+	var lineTwo2 = $("<h3>").text("Max intake of Fats: " + tdee.getMacronutrients().fat + "g"); 
+
+	div1.append(lineZero0); 
+	div1.append(lineOne1); 
+	div1.append(lineTwo2); 
+
+	$(macronutrients).append(div1); 
 
 }
 
@@ -202,6 +231,7 @@ $(".recipe-btn").on("click", function () {
 	$(".recipe-labels").show();
 	$(".generated-recipe").fadeIn("slow");
 	var recipeType = $(this).val();
+
 	console.log(recipeType);
 
 	$(document).on("click", ".button_su_inner1", function () {
@@ -218,7 +248,7 @@ $(".recipe-btn").on("click", function () {
 			function recipeSearch() {
 
 
-				var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&healthLabels=" + healthRestriction + "&calories=591-722";
+				var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&healthLabels=" + healthRestriction;
 
 				$.ajax({
 					url: queryURL,
@@ -251,7 +281,7 @@ $(".recipe-btn").on("click", function () {
 		})
 		
 	
-		// var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction + "&calories=591-722";
+		// var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction;
 		// var healthRestriction = $(this).val(); 
 	
 		// $.ajax({
@@ -299,7 +329,7 @@ $(".recipe-btn").on("click", function () {
 				function recipeSearch() {
 
 
-					var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&calories=591-722";
+					var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType;
 
 					$.ajax({
 						url: queryURL,
@@ -341,7 +371,7 @@ $(".recipe-btn").on("click", function () {
 		function recipeSearch() {
 
 
-			var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType + "&calories=591-722";
+			var queryURL = "https://api.edamam.com/search?q=" + foodType + "&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=" + recipeType;
 
 			$.ajax({
 				url: queryURL,
@@ -374,6 +404,45 @@ $(".recipe-btn").on("click", function () {
 
 	})
 })
+
+// $(document).on("click", ".button_su_inner1", function () {
+
+// 	$(".generated-recipe").empty(); 
+
+// 	var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction;
+// 	var healthRestriction = $(this).val(); 
+
+// 	$.ajax({
+// 		url: queryURL,
+// 		method: "GET"
+// 	}).then(function (response) {
+
+// 		results = response.hits;
+// 		for (var i = 0; i < results.length; i++) {
+// 			console.log(results[i].recipe);
+// 			console.log(results[i].recipe.label);
+// 			var Div = $("<div>");
+// 			var RName = $("<h1>").text(RecipeName).addClass("recipe-name");
+// 			var RecipeName = results[i].recipe.label;
+// 			var RecipeImg = results[i].recipe.image;
+// 			var RecipeLink = results[i].recipe.url;
+// 			var image = $("<img>").attr("src", RecipeImg).addClass("img-food");
+// 			var link = $("<a>").attr("href", RecipeLink).addClass("img-link");
+
+// 			Div.append(RName);
+// 			Div.append(image);
+// 			Div.append(link);
+// 			link.text("Recipe Link: " + RecipeLink);
+
+// 			$(".generated-recipe").prepend(Div);
+
+// 		}
+// 	});
+// }); 
+
+
+
+
 
 $(".button_su_inner").mouseenter(function (e) {
 	var parentOffset = $(this).offset();
