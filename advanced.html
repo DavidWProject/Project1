@@ -147,7 +147,13 @@
             <input type="workout" class="form-control" id="workoutInput" aria-describedby="workout" placeholder="Search">
             <small id="emailHelp" class="form-text text-muted">Search for Exercise</small>
             <button onclick="searchWorkout();" class="btn btn-primary">Submit</button>
-        </div> 
+        </div>
+        
+        <div class="row" id = "personalWorkoutContainer">
+ 
+        </div>
+
+        <hr>
         
         <div class="col-lg-8">
             <div class="tab-content" id="workoutContent">
@@ -172,7 +178,16 @@
                 <div class="tab-pane" id="workout18" role="tabpanel"></div>
                 <div class="tab-pane" id="workout19" role="tabpanel"></div>
                 <div class="tab-pane" id="workout20" role="tabpanel"></div>
-            </div>       
+            </div> 
+            
+            <div class="input-group mb-3" id="workoutInputContainer" style="display: none">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Sets</span>
+                </div>
+            <input type="text" class="col-xs-1" id = "setInput" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+
         </div>
 
         <div class="col-lg-4">
