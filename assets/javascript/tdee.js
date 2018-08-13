@@ -125,7 +125,16 @@ function myGender(id) {
 
 function mySubmit() {
 
+	$('#ageError').hide();
+	$('#weightError').hide();
+	$('#feetError').hide();
+	$('#inchesError').hide();
+	$('#durationError').hide();
+	$('#workoutError').hide();
 
+	var errorCheck = false;
+
+	
 
 	var bodytype = '';
 
@@ -154,13 +163,54 @@ function mySubmit() {
 
 
 
+	
+	console.log("toootall" + document.getElementById("weight").value);
+
+
+
+	if (isNaN(ageInput) || ageInput==='')
+	{
+		$('#ageError').show();
+		errorCheck = true;
+	}
+
+	if (isNaN(weightHolder) || weightHolder==='')
+	{
+		$('#weightError').show();
+		errorCheck = true;
+	}
+
+	if (isNaN(feetHolder) || feetHolder === '')
+	{
+		$('#feetError').show();
+		errorCheck = true;
+	}
+	
+	if (isNaN(inchesHolder) || inchesHolder === '')
+	{
+		$('#inchesError').show();
+		errorCheck = true;
+	}
+
+	if (isNaN(durationInput) || durationInput === '')
+	{
+		$('#durationError').show();
+		errorCheck = true;
+	}
+
+	
+
+	if (workoutInput === 'Choose...')
+	{
+		$('#workoutError').show();
+		errorCheck = true;
+	}
+
+	if(errorCheck)
+	return;
+
 	var heightInput = ((Number(feetHolder) * 12) + Number(inchesHolder)) * 2.54;
-	console.log("toootall" + heightInput);
-
-
 	var weightInput = weightHolder * 0.453592;
-
-
 
 	var qmmr = {
 		weight: weightInput,
@@ -218,21 +268,26 @@ function mySubmit() {
 	div1.append(lineOne1); 
 	div1.append(lineTwo2); 
 
-	$(macronutrients).append(div1); 
+	$(macronutrients).append(div1);
+	
+	$(".recipe-portion").fadeIn("slow");
+	$(".recipe-labels").hide();
+	recipeFinder()
 
 }
 
-$("#submit-btn").on("click", function () {
-	$(".recipe-portion").fadeIn("slow");
-	$(".recipe-labels").hide();
-});
+function recipeFinder()
+{
+	/*
+	$("#submit-btn").on("click", function () {
+		$(".recipe-portion").fadeIn("slow");
+		$(".recipe-labels").hide();
+	});*/
 
-$(".recipe-btn").on("click", function () {
-	$(".recipe-labels").show();
-	$(".generated-recipe").fadeIn("slow");
-	var recipeType = $(this).val();
-
-	console.log(recipeType);
+	$(".recipe-btn").on("click", function () {
+		$(".recipe-labels").show();
+		$(".generated-recipe").fadeIn("slow");
+		var recipeType = $(this).val();
 
 	$(document).on("click", ".button_su_inner1", function () {
 
@@ -280,36 +335,6 @@ $(".recipe-btn").on("click", function () {
 			};
 		})
 		
-	
-		// var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction;
-		// var healthRestriction = $(this).val(); 
-	
-		// $.ajax({
-		// 	url: queryURL,
-		// 	method: "GET"
-		// }).then(function (response) {
-	
-		// 	results = response.hits;
-		// 	for (var i = 0; i < results.length; i++) {
-		// 		console.log(results[i].recipe);
-		// 		console.log(results[i].recipe.label);
-		// 		var Div = $("<div>");
-		// 		var RName = $("<h1>").text(RecipeName).addClass("recipe-name");
-		// 		var RecipeName = results[i].recipe.label;
-		// 		var RecipeImg = results[i].recipe.image;
-		// 		var RecipeLink = results[i].recipe.url;
-		// 		var image = $("<img>").attr("src", RecipeImg).addClass("img-food");
-		// 		var link = $("<a>").attr("href", RecipeLink).addClass("img-link");
-	
-		// 		Div.append(RName);
-		// 		Div.append(image);
-		// 		Div.append(link);
-		// 		link.text("Recipe Link: " + RecipeLink);
-	
-		// 		$(".generated-recipe").prepend(Div);
-	
-		// 	}
-		// });
 	}); 
 
 	$("input.custom-ingredients").keypress(function (e) {
@@ -405,43 +430,6 @@ $(".recipe-btn").on("click", function () {
 	})
 })
 
-// $(document).on("click", ".button_su_inner1", function () {
-
-// 	$(".generated-recipe").empty(); 
-
-// 	var queryURL = "https://api.edamam.com/search?q=chicken&app_id=0c8956d4&app_key=f6e0fb536a06a548b0e38056ceba81fa&diet=balanced&healthLabels=" + healthRestriction;
-// 	var healthRestriction = $(this).val(); 
-
-// 	$.ajax({
-// 		url: queryURL,
-// 		method: "GET"
-// 	}).then(function (response) {
-
-// 		results = response.hits;
-// 		for (var i = 0; i < results.length; i++) {
-// 			console.log(results[i].recipe);
-// 			console.log(results[i].recipe.label);
-// 			var Div = $("<div>");
-// 			var RName = $("<h1>").text(RecipeName).addClass("recipe-name");
-// 			var RecipeName = results[i].recipe.label;
-// 			var RecipeImg = results[i].recipe.image;
-// 			var RecipeLink = results[i].recipe.url;
-// 			var image = $("<img>").attr("src", RecipeImg).addClass("img-food");
-// 			var link = $("<a>").attr("href", RecipeLink).addClass("img-link");
-
-// 			Div.append(RName);
-// 			Div.append(image);
-// 			Div.append(link);
-// 			link.text("Recipe Link: " + RecipeLink);
-
-// 			$(".generated-recipe").prepend(Div);
-
-// 		}
-// 	});
-// }); 
-
-
-
 
 
 $(".button_su_inner").mouseenter(function (e) {
@@ -501,3 +489,5 @@ $(".button_su_inner1").mouseleave(function (e) {
 	$(this).prev(".su_button_circle").addClass("desplode-circle");
 
 });
+
+}
